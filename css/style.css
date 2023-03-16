@@ -1,0 +1,97 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+body {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px 0;
+}
+
+.input {
+  width: 79%;
+  padding: 9px;
+  border: 1px solid gray;
+}
+
+.button {
+  width: 20%;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #2c6fff;
+}
+
+.error {
+  position: absolute;
+  font-weight: 700;
+  color: red;
+  background-color: #fff;
+}
+
+.list li {
+  padding: 15px 5px;
+  border-bottom: 1px solid gray;
+}
+.list li:last-child {
+  margin-right: 0px;
+  border-bottom: none;
+}
+
+.repo__name {
+  line-height: 1.5em;
+}
+.repo__info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.link {
+  font-size: 16px;
+}
+
+.stargazers {
+  margin-right: 13px;
+}
+
+.stargazers::before {
+  content: "☆";
+}
+
+.language {
+  margin-right: 13px;
+}
